@@ -1,0 +1,11 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY ./src .
+
+RUN apk add --no-cache git && \
+    npm install --only=production && \
+    apk del git
+
+CMD ["npm", "run", "prod"]
