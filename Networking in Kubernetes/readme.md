@@ -1,0 +1,1 @@
+To enable Network Policies in a Kubernetes cluster, you need to have a network plugin that supports them.
